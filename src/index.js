@@ -4,9 +4,7 @@ module.exports = function check(str, bracketsConfig) {
     config.push(bracketsConfig[i].join(''))
   }
   for (let j = 0; j < config.length; j++) {
-    console.log(j)
     if (str.includes(config[j])) {
-      console.log('here')
       str = str.replace(config[j], '')
       j = -1;
     }
